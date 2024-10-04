@@ -1,16 +1,15 @@
-# flatten-dir-deno
+# 📁 flatten-dir-deno
 
 ![JSR Version](https://img.shields.io/jsr/v/%40reemo/flatten-dir-deno)
 ![CICD](https://img.shields.io/github/actions/workflow/status/r48n34/flatten-dir-deno/test.yml)
 
 
+A simple CLI for flatten the directory 📁 with JSR.
 
+Modify from:  
+https://www.npmjs.com/package/flatten-directory?activeTab=code
 
-A simple CLI for flatten the directory.
-
-Modify from https://www.npmjs.com/package/flatten-directory?activeTab=code
-
-## Install 
+## 💻 Install from JSR (Recommended)
 1. Using the following commands.
 ```bash
 deno install -A -n flatDir https://jsr.io/@reemo/flatten-dir-deno/0.1.2/mod.ts
@@ -21,8 +20,8 @@ deno install -A -n flatDir https://jsr.io/@reemo/flatten-dir-deno/0.1.2/mod.ts
 flatDir testFolder
 ```
 
-## Install from git
-This methos is for non-denoLand install. If you are using the top method to install, you can skip this sections. 
+## 🐙 Install from Git
+This methos is for non-denoLand / Jsr install. If you are using the top method to install, you can skip this sections. 
 
 1. Git clone the project first
 ```bash
@@ -36,13 +35,15 @@ deno task install
 
 3. Run with dtree
 ```bash
-flatDir
+flatDir testFolder
 ```
 
-## Result
-Using this repo for samples, the cli will output this result.
+## 🚀 Usage
+Using this repo for sample, the cli will output this result.
 
 ```bash
+# In default using your working dir
+# <output_dir> is the path to copy files
 flatDir <output_dir>
 
 e.g. flatDir myCopyFile
@@ -60,11 +61,11 @@ To: D:\Github\assignment-prompt\myCopyFile\.git-description
 //...
 ```
 
-## Uninstall 
+## 🚫 Uninstall 
 ```bash
 deno uninstall flatDir 
 ```
 
-## License
+## 🚗 License
 
 MIT License

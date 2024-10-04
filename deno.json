@@ -1,12 +1,17 @@
 {
+    "name": "@reemo/flatten-dir-deno",
+    "version": "1.0.0",
+    "exports": "./flattenDirectory.ts",
     "compilerOptions": {
         "allowJs": true,
-        "lib": ["deno.window"],
+        "lib": [
+            "deno.window"
+        ],
         "strict": true
     },
     "tasks": {
         "start": "deno run -A flattenDirectory.ts",
-        "dev":   "deno run -A  flattenDirectory.ts testFolder",
+        "dev": "deno run -A  flattenDirectory.ts testFolder",
         "install": "deno install -A -n flatDir -f flattenDirectory.ts",
         "test": "deno test --allow-read test/general.test.ts",
         "pwd": "cd $INIT_CWD && pwd"
@@ -18,6 +23,8 @@
         "semiColons": true,
         "singleQuote": true,
         "proseWrap": "preserve",
-        "include": ["src/"]
+        "include": [
+            "src/"
+        ]
     }
 }

@@ -1,5 +1,11 @@
 # flatten-dir-deno
 
+![JSR Version](https://img.shields.io/jsr/v/%40reemo/flatten-dir-deno)
+![CICD](https://img.shields.io/github/actions/workflow/status/r48n34/flatten-dir-deno/test.yml)
+
+
+
+
 A simple CLI for flatten the directory.
 
 Modify from https://www.npmjs.com/package/flatten-directory?activeTab=code

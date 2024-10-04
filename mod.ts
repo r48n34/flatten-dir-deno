@@ -1,6 +1,3 @@
-// https://www.npmjs.com/package/flatten-directory?activeTab=code
-// deno run -A .\flattenDirectory.ts
-
 import path from "node:path";
 import process from "node:process";
 import fs from "npm:fs-extra@11.2.0";
@@ -17,11 +14,14 @@ export function flattenDirectoryToDir(
     rootdir: string, // Directory to flatten
     outputdir: string, // Output Directory
 ): void {
+
+    // Rootdir not exist
     if (!fs.existsSync(rootdir)) {
         console.error(`\x1b[31mInput Rootdir ${rootdir} is not exist\x1b[0m`);
         throw new Error(`Input Rootdir ${rootdir} is not exist`);
     }
 
+    // Check output dir
     if (!fs.existsSync(outputdir)) {
         console.log(`Output dir not exist, creating at ${outputdir}`);
         fs.mkdirSync(outputdir);
@@ -130,14 +130,13 @@ export function flattenDirectoryToDir(
             .join("-");
 
         const dest = path.resolve(outputdir, destFileName);
-        // helpers.log(`${orig} -> ${dest}`);
-
         console.log(`From: ${orig}`);
         console.log(`\x1b[33mTo: ${dest}\x1b[0m`);
 
         if (copy) {
             fs.copySync(orig, dest, { overwrite: true, dereference: true });
-        } else {
+        } 
+        else {
             helpers.move(orig, dest);
         }
     });

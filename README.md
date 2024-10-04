@@ -12,7 +12,7 @@ https://www.npmjs.com/package/flatten-directory?activeTab=code
 ## 💻 Install from JSR (Recommended)
 1. Using the following commands.
 ```bash
-deno install -A -n flatDir https://jsr.io/@reemo/flatten-dir-deno/0.1.2/mod.ts
+deno install -A -n flatDir https://jsr.io/@reemo/flatten-dir-deno/0.1.3/mod.ts
 ```
 
 2. Done, try the following command in terminal.

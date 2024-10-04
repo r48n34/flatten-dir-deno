@@ -6,6 +6,13 @@ import process from "node:process";
 import fs from "npm:fs-extra@11.2.0";
 import lodash from "npm:lodash@4.17.21";
 
+/**
+   * Function for flatten the leveling directory to single directory
+   *
+   * @param rootdir The original directory to be flatten, will copy all files and not affect to the original file.  
+   * @param outputdir Target directory to be copy to.
+   * @returns void  
+*/
 export function flattenDirectoryToDir(
     rootdir: string, // Directory to flatten
     outputdir: string, // Output Directory
@@ -139,6 +146,7 @@ export function flattenDirectoryToDir(
     helpers.log("Done");
 }
 
+/** Main function for calling with CLI, for CLI endpoint, not for export. */
 function main() {
     try { 
         const targetDir = Deno.args[0];

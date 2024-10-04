@@ -1,6 +1,6 @@
 {
     "name": "@reemo/flatten-dir-deno",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "exports": "./mod.ts",
     "license": "MIT",
     "compilerOptions": {
@@ -14,7 +14,8 @@
         "start": "deno run -A mod.ts",
         "dev": "deno run -A  mod.ts testFolder",
         "install": "deno install -A -n flatDir -f mod.ts",
-        "pwd": "cd $INIT_CWD && pwd"
+        "pwd": "cd $INIT_CWD && pwd",
+        "publish": "deno publish --allow-dirty"
     },
     "fmt": {
         "useTabs": true,

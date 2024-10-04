@@ -3,8 +3,8 @@
 
 import path from "node:path";
 import process from "node:process";
-import fs from "npm:fs-extra";
-import lodash from "npm:lodash";
+import fs from "npm:fs-extra@11.2.0";
+import lodash from "npm:lodash@4.17.21";
 
 export function flattenDirectoryToDir(
     rootdir: string, // Directory to flatten
@@ -159,3 +159,5 @@ function main() {
 if (import.meta.main) {
     main();
 }
+
+// https://jsr.io/@reemo/flatten-dir-deno/0.1.0/mod.ts

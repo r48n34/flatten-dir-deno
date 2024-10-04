@@ -2,6 +2,7 @@
     "name": "@reemo/flatten-dir-deno",
     "version": "0.1.0",
     "exports": "./mod.ts",
+    "license": "MIT",
     "compilerOptions": {
         "allowJs": true,
         "lib": [

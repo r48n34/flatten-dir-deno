@@ -1,9 +1,19 @@
 # flatten-dir-deno
 
-A simple CLI for flatten the directory
+A simple CLI for flatten the directory.
 
 Modify from https://www.npmjs.com/package/flatten-directory?activeTab=code
 
+## Install 
+1. Using the following commands.
+```bash
+deno install -A -n flatDir https://jsr.io/@reemo/flatten-dir-deno/0.1.0/mod.ts
+```
+
+2. Done, try the following command in terminal.
+```bash
+flatDir
+```
 
 ## Install from git
 This methos is for non-denoLand install. If you are using the top method to install, you can skip this sections. 
